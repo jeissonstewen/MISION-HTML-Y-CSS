@@ -22,7 +22,8 @@ html,body{
 header{
     background-color: var(--blue);
     height: 64px;
-    
+    position: fixed;
+    width: 100%;    
 }
 .container{
     font-size: 24px;
@@ -86,6 +87,7 @@ section{
 
 .acerca{
     padding: 10px;
+    background-color: var(--gray);
 }
 
 .info{
@@ -145,6 +147,132 @@ section{
     color: var(--fucshia);
     background-color: var(--white);
     border: solid 1px var(--fucshia);
+}
+.servicios{
+    padding: 10px;
+    height: 100vh;
+}
+.services{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+.services h3{
+    padding: 5px 10px;
+    border-top: solid 2px var(--fucshia);
+    border-bottom: solid 2px var(--fucshia);
+    width: fit-content;
+}
+.info_uno, .info_dos{
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    height: 40vh; 
+}
+.info_uno div, .info_dos div{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.info_uno svg, .info_dos svg{
+    fill: var(--fucshia);
+}
+
+.portafolio{
+    padding: 15px;
+    height: 100vh;
+    background-color: var(--gray);
+}
+.portfolio{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+.portfolio h3{
+    padding: 5px 10px;
+    border-top: solid 2px var(--fucshia);
+    border-bottom: solid 2px var(--fucshia);
+    width: fit-content;
+}
+.projects{
+    height: 80vh;
+    margin: auto;
+    display: grid;
+    width: 60%;
+    justify-content: center;
+    grid-template-areas: 
+    "uno dos tres"
+    "cuatro cinco seis";
+}
+.project_1{
+    grid-template-columns: uno;
+    background-image: url(./asset/portfolio-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project_1:hover{
+    background-color: aqua;
+}
+
+.project_2{
+    grid-template-columns: dos;
+    background-image: url(./asset/portfolio-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project_3{
+    grid-template-columns: tres;
+    background-image: url(./asset/portfolio-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project_4{
+    grid-template-columns: cuatro;
+    background-image: url(./asset/portfolio-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project_5{
+    grid-template-columns: cinco;
+    border: solid 1px;
+    background-image: url(./asset/portfolio-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.project_6{
+    grid-template-columns: seis;
+    border: solid 1px;
+    background-image: url(./asset/portfolio-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projects .info{
+    margin: 10px;
+    border: solid 1px;
+    height: 95%;
+}
+
+.testimonio{
+    padding: 15px;
+    height: 100vh;
+}
+.opinion{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+.opinion h3{
+    padding: 5px 10px;
+    border-top: solid 2px var(--fucshia);
+    border-bottom: solid 2px var(--fucshia);
+    width: fit-content;
 }
 
 footer{
