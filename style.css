@@ -13,6 +13,7 @@
     --blackTransparent:hsla(0, 0%, 0%, 0.822);
     --darkgray:hsl(0, 1%, 50%);
     --darkgray2:hsl(0, 1%, 22%);
+    scroll-behavior: smooth;
 }
 html,body{
     height: 100vh;
@@ -21,12 +22,13 @@ html,body{
 header{
     background-color: var(--blue);
     height: 64px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    
 }
 .container{
     font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .container .name{
     display: flex;
@@ -42,9 +44,107 @@ header{
     color: var(--white);
     margin: 0 100px;
 }
-.item{
+.item a{
     color: var(--fucshia);
     font-weight: 600;
+    text-decoration: none;
+}
+.item a:hover{
+    color: var(--white);
+}
+section{
+    height: 100vh;
+}
+.welcome{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.818), rgba(0, 0, 0, 0.9)),url(./asset/background__welcome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome h1{
+    width: 400px;
+    text-align: center;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 70px;
+}
+.welcome a{
+    background-color: var(--fucshia);
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    color: var(--white);
+}
+.welcome a:hover{
+    color: var(--fucshia);
+    background-color: var(--white);
+    border: solid 1px var(--fucshia);
+}
+
+.acerca{
+    padding: 10px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.personal{
+    width: 33%;
+    text-align: end;
+}
+.foto{
+    width: 33%;
+}
+.foto img{
+    width: 100%;
+}
+.progreso{
+    width: 33%;
+    display: block;
+}
+.progress {
+    height: 35px;
+    width: 100%;
+    border: 1px solid var(--darkgray);
+    border-radius: 5px;
+    background-color: var(--darkgray2);
+    margin-bottom: 15px;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: var(--darkgray);
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+.progreso p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv{
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+.cv a{
+    background-color: var(--fucshia);
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    color: var(--white);
+}
+.cv a:hover{
+    color: var(--fucshia);
+    background-color: var(--white);
+    border: solid 1px var(--fucshia);
 }
 
 footer{
