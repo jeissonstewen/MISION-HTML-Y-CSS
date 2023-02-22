@@ -261,6 +261,10 @@ section{
 .testimonio{
     padding: 15px;
     height: 100vh;
+    background-image:linear-gradient(rgba(249, 245, 245, 0.5), rgba(253, 252, 252, 0.5)), url(./asset/hero-image-customers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .opinion{
     text-align: center;
@@ -274,7 +278,85 @@ section{
     border-bottom: solid 2px var(--fucshia);
     width: fit-content;
 }
+.opinion_info{
+    height: 40%;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    background-color: var(--white);
+    padding: 1% 2%;
+    margin-top: 13%;
+}
+.opinion_info img{
+    height: 50%;
+    border-radius: 50%;
+    padding: 3%;
+}
+.opinion_info h4{
+    color: var(--fucshia);
+    margin-top: 2%;
 
+}
+.opinion_info span{
+    padding: 2%;
+    font-size: 400%;
+}
+.contacto{
+    padding: 15px;
+    height: 100vh;
+    text-align: center;
+}
+.contacto_info{
+    margin: 2%;
+    display: flex;
+    gap: 2%;
+    justify-content: space-around;
+    text-align: center;
+}
+.contacto_info div{
+    width: 23%;
+    padding: 3% 5%;
+    border: solid 2px var(--gray);
+    border-radius: 15px;
+    box-shadow: blue;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);     
+    
+}
+.contacto_mensaje{
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    border: solid 2px var(--gray);
+    border-radius: 15px;
+    box-shadow: blue;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);  
+}
+form{
+    margin: 2% 0;
+}
+form input{
+    border: none;
+    border-bottom: solid 1px;
+    margin-bottom: 1%;
+    width: 48%;
+}
+form textarea{
+    width: auto;
+    margin-bottom: 2%;
+}
+.contacto_mensaje a{
+    background-color: var(--fucshia);
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    color: var(--white);
+}
+
+.contacto_mensaje a:hover{
+    color: var(--fucshia);
+    background-color: var(--white);
+    border: solid 1px var(--fucshia);
+}
 footer{
     background-color: var(--blue);
     color: white;
