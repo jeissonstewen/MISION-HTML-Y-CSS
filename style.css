@@ -248,57 +248,48 @@ section{
 }
 .project_1 .bg{
     height: 100%;
-    position: relative;
 }
 .project_2 .bg{
     height: 100%;
-    position: relative;
 }
 .project_3 .bg{
     height: 100%;
-    position: relative;
 }
 .project_4 .bg{
     height: 100%;
-    position: relative;
 }
 .project_5 .bg{
     height: 100%;
-    position: relative;
 }
 .project_6 .bg{
     height: 100%;
-    position: relative;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    text-align: center;
 }
 
 .bg .info{
-    position: absolute;
     width: 90%;
     height: 90%;
     border: solid 1px white;
     color: white;
-    top: 0;
-    left: 0;
-     right: 0;
-    margin: 1rem auto;
-    text-align: center;
-    opacity: 1;
+    opacity: 0;
+
 }
 .bg:hover{
     transition: 2s;
     box-shadow: inset 0 100vh 0 0 var(--fucshia2);
-    transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    transition: color .9s ease-in-out, box-shadow 1.5s ease-in-out;
 }
 .bg .info:hover{
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    opacity: inset 0 100vh 0 0;
+    transition: opacity .9s ease-in-out, box-shadow 1.5s ease-in-out;
     opacity: 1;
 }
-
-
-
 
 .testimonio{
     padding: 15px;
@@ -373,6 +364,7 @@ section{
     box-shadow: blue;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);  
 }
+
 form{
     margin: 2% 0;
 }
